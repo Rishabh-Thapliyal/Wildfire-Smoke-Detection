@@ -1,9 +1,10 @@
 import openai
+import os
 client = openai.OpenAI(
-    api_key="sk-PP2Y9C-TkPw_ZBRPnDQryQ",
+    api_key=os.getenv('API_KEY'),
     base_url="https://llm.nrp-nautilus.io"
 )
-import os
+
 os.sys.path.append("/expanse/lustre/projects/ddp464/mhnguyen/data")
 
 
